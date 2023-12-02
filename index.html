@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Columnas</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="script.js"defer></script>
+        <title>Extracción de valores de input</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="Cuerpo">
+            <div id="Cuerpo1">
+                <div class="contenido1">
+                    <h1>DIMENSIONES MÍNIMAS</h1>
+                    <p>Resistencia a Compresión (MPA=25)</p>
+                    <p>Luz Transversal (ly)</p>
+                    <input class="item" id="lx" type="number" placeholder="Unidades en metros"/>
+                    <p>Luz Longitudinal (lx)</h2>
+                    <input class="item" id="ly" type="number" placeholder="Unidades en metros  "/>
+                    <p>Número de Pisos (N)</p>
+                    <input class="item" id="Numeros" type="number" placeholder="Numeros de Pisos"/>
+                    <p>Esquina:  0.35 </p>
+                    <p>Lateral:  0.40 </p>
+                    <p>Central:  0.50 </p>
+                    <input class="item" id="Factor" type="number" placeholder="factor de posición "/>
+                    <p class="item" id="error">¡Debe completar todos los datos!</p>
+                    <button onclick="Calcular()">Calcular</button>
+                </div>
+            </div>
+            <div id="Cuerpo2">
+                <div class="contenido2">
+                    <h3>COLUMNA</h3>
+                    <p class="item resultado" id="seccion">Sección Requerida</p>
+                    <p class="item resultado" id="Dimen">Dimensiones</p>
+                </div>
+            </div>
+        </div>
+     </body>
+</html>
